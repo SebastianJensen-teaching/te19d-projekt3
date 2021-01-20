@@ -38,6 +38,17 @@ p {
   line-height: 1.6;
 }
 
+/* IMAGE */
+
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-bubble {
+  border-radius: 100%;
+}
+
 /* BOX */
 
 .box {
