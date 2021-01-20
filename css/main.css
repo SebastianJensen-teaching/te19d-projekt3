@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-shades: #f4f3f3;
+  --light-accent: #867d86;
+  --main-brand: #948b93;
+  --dark-accent: #7b707b;
+  --dark-shades: #363137;
+}
+
+/* BASE ELEMENT STYLING */
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+/* BOX */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.dark {
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
+}
+
+.main-brand {
+  background-color: var(--main-brand);
+  color: var(--dark-shades);
+}
+
+.light-accent {
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
+}
+
+.dark-accent {
+  background-color: var(--dark-accent);
+  color: var(--light-shades);
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.grid + .grid {
+  margin-top: 1.5rem;
+}
+
+.two-column-even {
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-column-big-small {
+  grid-template-columns: 2fr 1fr;
+}
+
+.two-column-small-big {
+  grid-template-columns: 1fr 2fr;
+}
+
+.three-column-even {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.four-column-even {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.five-column-even {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.auto-columns {
+  grid-auto-flow: column;
+}
+
+.centered {
+  place-items: center;
+}
+
+p.centered {
+  text-align: center;
+}
+
+h1.centered,
+h2.centered,
+h3.centered,
+h4.centered,
+h5.centered,
+h6.centered {
+  text-align: center;
+}
